@@ -94,7 +94,7 @@ for (let i=0; i<movies.results.length; i++){
     } else {
     unwatchMovie.classList.add('opacity-20')
     
-      // document.querySelector(`.movie-${id}`).classList.add('opacity-20')  -- with the unwatchMovie actions
+      // document.querySelector(`.movie-${id}`).classList.add('opacity-20')  -- without the unwatchMovie actions lines 90-95
     await db.collection('watched').doc(`movie-${id}`).set({})
     }
   })
