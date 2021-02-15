@@ -48,7 +48,7 @@ for (let i=0; i<movies.results.length; i++){
   let id = currentMovies.id
   let moviePoster = currentMovies.poster_path
   
-  let querySnapshot = await db.collection('Watched').doc(`movie-${id}`).get()
+  let querySnapshot = await db.collection('watched').doc(`movie-${id}`).get()
   
   
   if (querySnapshot.exists) {
